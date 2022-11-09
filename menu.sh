@@ -17,6 +17,7 @@ BURIQ () {
     d1=(`date -d "$exp" +%s`)
     d2=(`date -d "$biji" +%s`)
     exp2=$(( (d1 - d2) / 86400 ))
+    exp2=`date -d "$exp days" +"%Y-%m-%d"`
     if [[ "$exp2" -le "0" ]]; then
     echo $user > /etc/.$user.ini
     else
