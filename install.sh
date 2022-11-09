@@ -588,6 +588,7 @@ WantedBy=multi-user.target
 EOF
 cd /usr/bin/
 wget -O menu "https://raw.githubusercontent.com/zeaking/info/main/menu.sh"
+wget -O cekws "https://raw.githubusercontent.com/zeaking/info/main/cekws.sh"
 wget -O menu-vmess "https://raw.githubusercontent.com/zeaking/info/main/menu-vmess.sh"
 wget -O menu-vless "https://raw.githubusercontent.com/zeaking/info/main/menu-vless.sh"
 wget -O menu-trojan "https://raw.githubusercontent.com/zeaking/info/main/menu-trojan.sh"
@@ -600,6 +601,7 @@ wget -O running "https://raw.githubusercontent.com/myridwan/sc/ipuk/ssh/running.
 wget -O speedtest "https://raw.githubusercontent.com/Zeastore/src/main/ssh/speedtest_cli.py"
 wget -O crtv2ray "https://raw.githubusercontnt.com/Zeastore/src/main/xray/crt.sh"
 chmod +x menu
+chmod +x cekws
 chmod +x menu-vmess
 chmod +x menu-vless
 chmod +x menu-trojan
@@ -640,4 +642,10 @@ echo "menu" >> .profile
 echo "0 5 * * * root  reboot" >> /etc/crontab
 echo "0 0 * * * root xp" >> /etc/crontab
 mv domain /etc/xray/domain
+echo -ne "[ ${yell}WARNING${NC} ] Silahkan Reboot Ulang Vps Anda ? (y/n)? "
+read answer
+if [ "$answer" == "${answer#[Yy]}" ] ;then
+exit 0
+else
 reboot
+fi
