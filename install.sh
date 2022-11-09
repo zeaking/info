@@ -585,18 +585,18 @@ LimitNOFILE=1000000
 WantedBy=multi-user.target
 EOF
 cd /usr/bin/
-wget -O menu "https://raw.githubusercontent.com/myridwan/xray/ipuk/menu.sh"
-wget -O menu-vmess "https://raw.githubusercontent.com/myridwan/xray/ipuk/menu-vmess.sh"
-wget -O menu-vless "https://raw.githubusercontent.com/myridwan/xray/ipuk/menu-vless.sh"
-wget -O menu-trojan "https://raw.githubusercontent.com/myridwan/xray/ipuk/menu-trojan.sh"
-wget -O menu-trojanws "https://raw.githubusercontent.com/myridwan/xray/ipuk/menu-trojanws.sh"
-wget -O menu-vlgrpc "https://raw.githubusercontent.com/myridwan/xray/ipuk/menu-vlgrpc.sh"
-wget -O xp "https://raw.githubusercontent.com/myridwan/xray/ipuk/main/xp.sh"
-wget -O about "https://raw.githubusercontent.com/myridwan/sc/ipuk/ssh/about.sh"
-wget -O add-host "https://raw.githubusercontent.com/myridwan/src/ipuk/ssh/add-host.sh"
+wget -O menu "https://raw.githubusercontent.com/zeaking/info/main/menu.sh"
+wget -O menu-vmess "https://raw.githubusercontent.com/zeaking/info/main/menu-vmess.sh"
+wget -O menu-vless "https://raw.githubusercontent.com/zeaking/info/main/menu-vless.sh"
+wget -O menu-trojan "https://raw.githubusercontent.com/zeaking/info/main/menu-trojan.sh"
+wget -O menu-trojanws "https://raw.githubusercontent.com/zeaking/info/main/menu-trojanws.sh"
+wget -O menu-vlgrpc "https://raw.githubusercontent.com/zeaking/info/main/menu-vlgrpc.sh"
+wget -O xp "https://raw.githubusercontent.com/zeaking/info/main/main/xp.sh"
+#wget -O about "https://raw.githubusercontent.com/myridwan/sc/ipuk/ssh/about.sh"
+wget -O add-host "https://raw.githubusercontent.com/Zeastore/src/main/ssh/add-host.sh"
 wget -O running "https://raw.githubusercontent.com/myridwan/sc/ipuk/ssh/running.sh"
-wget -O speedtest "https://raw.githubusercontent.com/myridwan/src/ipuk/ssh/speedtest_cli.py"
-wget -O crtv2ray "https://raw.githubusercontnt.com/myridwan/src/ipuk/xray/crt.sh"
+wget -O speedtest "https://raw.githubusercontent.com/Zeastore/src/main/ssh/speedtest_cli.py"
+wget -O crtv2ray "https://raw.githubusercontnt.com/Zeastore/src/main/xray/crt.sh"
 chmod +x menu
 chmod +x menu-vmess
 chmod +x menu-vless
