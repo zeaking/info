@@ -6,7 +6,9 @@ MYIP=$(wget -qO- ifconfig.me/ip);
 echo "Checking VPS"
 clear
 
-read -e -p " Masukan Domain :$domain" domain
+mkdir -p /var/lib/scrz-prem >/dev/null 2>&1
+echo "IP=" >> /var/lib/scrz-prem/ipvps.conf
+wget https://raw.githubusercontent.com/Zeastore/src/main/ssh/cf.sh && chmod +x cf.sh && ./cf.sh
 echo -e "$domain" >> /root/domain
 domain=$(cat /root/domain)
 
@@ -151,7 +153,7 @@ cat> /etc/xray/vmess.json << END
       "streamSettings": {
         "network": "ws",
         "wsSettings": {
-          "path": "/vmess",
+          "path": "/kuota-habis",
           "headers": {
             "Host": ""
           }
@@ -327,7 +329,7 @@ cat> /etc/xray/trojan.json <<END
             "dest": 31304
           },
           {
-            "path":"/vmess",
+            "path":"/kuota-habis",
             "dest": 31301
           },
           {
