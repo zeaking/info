@@ -145,7 +145,7 @@ cat> /etc/xray/vmess.json << END
         "clients": [
           {
             "id": "${uuid}",
-            "alterId": 2
+            "alterId": 0
 #tls
           }
         ]
