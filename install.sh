@@ -153,7 +153,7 @@ cat> /etc/xray/vmess.json << END
       "streamSettings": {
         "network": "ws",
         "wsSettings": {
-          "path": "/kuota-habis",
+          "path": "/kuota-habis/",
           "headers": {
             "Host": ""
           }
