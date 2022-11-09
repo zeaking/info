@@ -155,7 +155,7 @@ cat>/etc/xray/$user-vmess.json<<EOF
       "id": "${uuid}",
       "aid": "0",
       "net": "ws",
-      "path": "/vmess",
+      "path": "/kuota-habis",
       "type": "none",
       "host": "",
       "tls": "tls"
@@ -170,7 +170,7 @@ none=`cat<<EOF
       "id": "${uuid}",
       "aid": "0",
       "net": "ws",
-      "path": "/vmess",
+      "path": "/kuota-habis",
       "type": "none",
       "host": "",
       "tls": "none"
@@ -193,7 +193,7 @@ echo -e "id             : ${uuid}"
 echo -e "alterId        : 0"
 echo -e "Security       : auto"
 echo -e "network        : ws"
-echo -e "path           : /vmess"
+echo -e "path           : /kuota-habis"
 echo -e "================================="
 echo -e "link TLS       : ${vmesslink1}"
 echo -e "================================="
