@@ -146,7 +146,7 @@ read -p "Expired (days): " masaaktif
 exp=`date -d "$masaaktif days" +"%Y-%m-%d"`
 sed -i '/#tls$/a\### '"$user $exp"'\
 },{"id": "'""$uuid""'","alterId": '"0"',"email": "'""$user""'"' /etc/xray/vmess.json
-tls='cat<<EOF
+tls=`cat<<EOF
       {
       "v": "2",
       "ps": "${user}",
@@ -160,7 +160,7 @@ tls='cat<<EOF
       "host": "bug.com",
       "tls": "tls"
 }
-EOF'
+EOF`
 none=`cat<<EOF
       {
       "v": "2",
