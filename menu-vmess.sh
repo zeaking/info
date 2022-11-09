@@ -146,7 +146,7 @@ read -p "Expired (days): " masaaktif
 exp=`date -d "$masaaktif days" +"%Y-%m-%d"`
 sed -i '/#tls$/a\### '"$user $exp"'\
 },{"id": "'""$uuid""'","alterId": '"0"',"email": "'""$user""'"' /etc/xray/vmess.json
-cat>/etc/xray/$user-vmess.json<<EOF
+tls='cat<<EOF
       {
       "v": "2",
       "ps": "${user}",
@@ -160,7 +160,7 @@ cat>/etc/xray/$user-vmess.json<<EOF
       "host": "bug.com",
       "tls": "tls"
 }
-EOF
+EOF'
 none=`cat<<EOF
       {
       "v": "2",
@@ -178,7 +178,7 @@ none=`cat<<EOF
 EOF`
 vmess_base641=$( base64 -w 0 <<< $vmess_json1)
 vmess_base642=$( base64 -w 0 <<< $vmess_json2)
-vmesslink1="vmess://$(base64 -w 0 /etc/xray/$user-vmess.json)"
+vmesslink1="vmess://$(echo $tls | base64 -w 0)"
 vmesslink2="vmess://$(echo $none | base64 -w 0)"
 systemctl restart xray@vmess
 service cron restart
