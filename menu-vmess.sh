@@ -155,7 +155,7 @@ tls=`cat<<EOF
       "id": "${uuid}",
       "aid": "0",
       "net": "ws",
-      "path": "/kuota-habis/",
+      "path": "/vmess",
       "type": "none",
       "host": "bug.com",
       "tls": "tls"
@@ -170,7 +170,7 @@ none=`cat<<EOF
       "id": "${uuid}",
       "aid": "0",
       "net": "ws",
-      "path": "/kuota-habis/",
+      "path": "/vmess",
       "type": "none",
       "host": "${domain}",
       "tls": "none"
@@ -193,7 +193,7 @@ echo -e "id             : ${uuid}"
 echo -e "alterId        : 0"
 echo -e "Security       : auto"
 echo -e "network        : ws"
-echo -e "path           : /kuota-habis/"
+echo -e "path           : /vmess"
 echo -e "================================="
 echo -e "link TLS       : ${vmesslink1}"
 echo -e "================================="
