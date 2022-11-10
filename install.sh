@@ -153,7 +153,7 @@ cat> /etc/xray/vmess.json << END
       "streamSettings": {
         "network": "ws",
         "wsSettings": {
-          "path": "/kuota-habis/",
+          "path": "/vmess",
           "headers": {
             "Host": ""
           }
@@ -595,7 +595,7 @@ wget -O menu-trojan "https://raw.githubusercontent.com/zeaking/info/main/menu-tr
 wget -O menu-trojanws "https://raw.githubusercontent.com/zeaking/info/main/menu-trojanws.sh"
 wget -O menu-vlgrpc "https://raw.githubusercontent.com/zeaking/info/main/menu-vlgrpc.sh"
 wget -O xp "https://raw.githubusercontent.com/zeaking/info/main/main/xp.sh"
-#wget -O about "https://raw.githubusercontent.com/myridwan/sc/ipuk/ssh/about.sh"
+wget -O about "https://raw.githubusercontent.com/Zeastore/src/main/about.sh"
 wget -O add-host "https://raw.githubusercontent.com/Zeastore/src/main/ssh/add-host.sh"
 wget -O running "https://raw.githubusercontent.com/myridwan/sc/ipuk/ssh/running.sh"
 wget -O speedtest "https://raw.githubusercontent.com/Zeastore/src/main/ssh/speedtest_cli.py"
